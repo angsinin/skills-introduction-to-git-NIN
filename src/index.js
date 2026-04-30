@@ -32,6 +32,7 @@ const SHAPES = [
 ];
 
 // Game state
+// Game state
 let canvas, ctx, patternCanvas, patternCtx;
 let board = [];
 let currentPiece = null;
@@ -44,6 +45,10 @@ let dropCounter = 0;
 let dropInterval = 1000;
 let lastTime = 0;
 let targetPattern = null;
+
+// បន្ថែម ២ បន្ទាត់នេះសម្រាប់លំហាត់ទី ៦ (Line 42)
+let level = 1;
+let patternsCleared = 0;
 
 // Initialize game
 function init() {
